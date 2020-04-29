@@ -7,10 +7,7 @@
 
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
-
-    
     <link rel="stylesheet" href="./css/style.css">
-
     <!-- Devicon font -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
@@ -19,33 +16,44 @@
     
       
       <!-- One project per section-->
-      <section class="page-section hidden" data-bgcolor="#db8f91">
+      <section class="page-section hidden" data-bgcolor="#E27D60">
 
         <div class="col intro-col">
-          <img src="https://www.gravatar.com/avatar/5b139d20bae2390032159e37999fe160?s=300" alt="Profile picture">
+          <img class="profiler-img" src="https://www.gravatar.com/avatar/5b139d20bae2390032159e37999fe160?s=300" alt="Profile picture" width="50px">
           <h1>Seb Heron</h1>
           <h2>Developer</h2>
-          <a href="#first-project">
+          <a href="#stacket-project">
             <img id="down-arrow" src="./img/arrow.png" alt="" width="50">
           </a>
         </div>
 
       </section>
 
-
-      <section class="page-section hidden" id="first-project" data-bgcolor="#71B280" data-textcolor="ivory">
+      <section class="page-section hidden" id="stacket-project" data-bgcolor="#E8A87C" data-textcolor="ivory">
         <div class="col">
-          <a href="https://rebrand.ly/petit" target="_blank"><h3>Petit</h3></a>
-          <p>A single file library for developing games quickly and in few lines for Processing 3</p>
+          <h3>Stacket</h3>
+          <p>A Kanban board style application for project management of solo projects.</p>
         </div>
         <div class="col">
           <a href="https://rebrand.ly/petit" target="_blank">
-            <img class="project-img " src="./img/petit.png"  alt="Flappy Duck, a Flappy Bird clone written in 109 lines">
+            <img class="stacket-img" src="./img/stacket.png"  alt="An example of a stacket board">
           </a>
         </div>
       </section>
 
-      <section class="page-section hidden" data-bgcolor="#db8f91">
+      <section class="page-section hidden" id="petit-project" data-bgcolor="#85DCBA" data-textcolor="ivory">
+        <div class="col">
+          <a href="https://rebrand.ly/petit" target="_blank"><h3>Petit</h3></a>
+          <p>A single file library for developing games quickly and in few lines for Processing 3.</p>
+        </div>
+        <div class="col">
+          <a href="https://rebrand.ly/petit" target="_blank">
+            <img class="project-img" src="./img/petit.png"  alt="Flappy Duck, a Flappy Bird clone written in 109 lines">
+          </a>
+        </div>
+      </section>
+
+      <section class="page-section hidden" data-bgcolor="#C38D9E">
         <div class="col" style="justify-content: center;text-align: center">
           <h3>Technologies</h3>
           <div class="technologies">
@@ -57,7 +65,10 @@
         </div>
       </section>
 
-    <script src="./js/myScripts.js"></script>
+      <section class="page-section hidden" data-bgcolor="#000000">
+      </section>
 
+    <script src="./js/pageScript.js"></script>
+    <script src="./js/slideshowScript.js"</script>
   </body>
 </html> 

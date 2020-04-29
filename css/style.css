@@ -18,12 +18,6 @@
   text-align: center !important;
 }
 
-.col.intro-col img {
-  border-radius:50%;
-  height:20%;
-  width:14%
-}
-
 .intro-col h1 {
   margin:5px;
 }
@@ -101,12 +95,7 @@
 
 .profiler-img	{
 	border-radius:50%;
-	width:200px;
-}
-
-.project-img {
-	width:300px;
-	max-width:100%;
+	width:150px;
 }
 
 .hidden {

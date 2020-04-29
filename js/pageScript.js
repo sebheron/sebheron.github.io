@@ -95,7 +95,8 @@ document.getElementById("down-arrow").addEventListener("click", function(el){
 	  left: 0, 
 	  behavior: 'smooth' 
 	});
-}); 
+});
+
 
 
 
