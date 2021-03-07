@@ -1,6 +1,6 @@
 V 0.1.0.0
 - Auto - updater added.
-  - Boards now auto-save.
+- Boards now auto-save.
 - Enhanced drag/drop system with some visual improvements.
 - Text-boxes now highlight on hover.
 - Settings menu added.
