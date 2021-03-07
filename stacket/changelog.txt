@@ -1,3 +1,5 @@
+Changelog
+
 V 0.1.0.0
 - Auto - updater added.
 - Boards now auto-save.
