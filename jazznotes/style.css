@@ -4,6 +4,7 @@
     --bar-dark: #222;
     --link-light: #35b7ff;
     --link-dark: #2998d6;
+    --bg-dark: #333;
 }
 
 html, body {
@@ -134,7 +135,7 @@ body {
 .carousel-image {
   width: 45%;
   transform: translateX(-50%);
-  border: solid 2px var(--link-dark);
+  border: solid 2px var(--bg-dark);
   border-radius: 10px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -146,39 +147,6 @@ body {
   transition: opacity 500ms;
 }
 
-.play-pause {
-  display: block;
-  position: relative;
-  height: 30px;
-  line-height: 30px;
-  width: 30px;
-  left: 50%;
-  top: 5px;
-  transform: translateX(-50%);
-  border: solid 2px var(--link-dark);
-  border-radius: 45px;
-  cursor: pointer;
-  transition: background-color 200ms, border-color 200ms, width 200ms;
-}
-
-.play-pause:hover {
-  background-color: var(--bar-light);
-  border-color: var(--link-light);
-}
-
-.play-pause:active {
-  transform: translateX(-50%) scale(0.92);
-}
-
-.play-pause i {
-  display: block;
-  width: 100%;
-  text-align: center;
-  color: var(--link-light);
-  font-size: 15px;
-  margin-top: 8px;
-}
-
 .container-panel {
   display: inline-block;
   padding-left: 20px;
@@ -186,6 +154,7 @@ body {
   margin-right: 30px;
   background-color: var(--bar-dark);
   border-radius: 10px;
+  border: solid 2px var(--bg-dark);
 }
 
 .container-panel p {
