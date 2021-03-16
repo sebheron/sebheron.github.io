@@ -99,6 +99,7 @@ body {
 }
 
 .main-header {
+  width: 100%;
   position: relative;
   display: inline-block;
   color: var(--link-dark);
@@ -115,7 +116,7 @@ body {
 }
 
 .carousel-image {
-  width: 85%;
+  width: 45%;
   transform: translateX(-50%);
   border: solid 2px var(--link-dark);
   border-radius: 10px;
@@ -160,4 +161,40 @@ body {
   color: var(--link-light);
   font-size: 15px;
   margin-top: 8px;
+}
+
+.container-panel {
+  display: inline-block;
+  width: 40%;
+  margin-right: 30px;
+  background-color: var(--bar-dark);
+  border-radius: 10px;
+  border: solid 2px var(--link-dark);
+}
+
+.container-panel p {
+  font-size: 15px;
+}
+
+.container-panel a {
+  color: var(--link-light);
+}
+
+.downloads-container {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.downloads-image {
+  display: inline-block;
+  height: 80px;
+  border: solid 2px var(--link-dark);
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.downloads-image:hover {
+  background-color: var(--bar-light);
+  border-color: var(--link-light);
 }
