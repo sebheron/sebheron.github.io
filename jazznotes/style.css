@@ -10,6 +10,10 @@ html, body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background-color);
   margin: 0;
@@ -17,8 +21,11 @@ body {
 }
 
 .top-bar {
+  width: 100%;
+  position: fixed;
   height: 70px;
   background-color: var(--bar-dark);
+  z-index: 100;
 }
 
 .logo-image {
@@ -86,14 +93,21 @@ body {
   opacity: 1;
 }
 
+.main-screen, .second-screen {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
 .main-screen {
   background-image: url("data/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: calc(100% - 70px);
-  width: 100%;
-  text-align: center;
+}
+
+.second-screen {
+  background-color: #333;
 }
 
 .main-header {
@@ -101,8 +115,12 @@ body {
   position: relative;
   display: inline-block;
   color: var(--link-dark);
-  top: 35%;
+  top: 40%;
   transform: translateY(-35%);
+}
+
+.main-header a {
+  color: var(--link-light);
 }
 
 .image-container {
@@ -172,10 +190,6 @@ body {
 
 .container-panel p {
   font-size: 15px;
-}
-
-.container-panel a {
-  color: var(--link-light);
 }
 
 .downloads-container {
