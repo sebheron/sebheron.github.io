@@ -93,8 +93,6 @@ body {
   background-position: center;
   height: calc(100% - 70px);
   width: 100%;
-  padding: 0;
-  margin: 0;
   text-align: center;
 }
 
@@ -197,4 +195,30 @@ body {
 .downloads-image:hover {
   background-color: var(--bar-light);
   border-color: var(--link-light);
+}
+
+.mobile-message {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .top-nav {
+    display: none;
+  }
+  .carousel-image {
+    width: 95%;
+  }
+  .play-pause {
+    display: none;
+  }
+  .container-panel {
+    display: none;
+  }
+  .page-title {
+    display: none;
+  }
+  .mobile-message {
+    color: var(--link-dark);
+    display: block;
+  }
 }
