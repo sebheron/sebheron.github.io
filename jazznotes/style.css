@@ -231,6 +231,9 @@ body {
   .main-header h2 {
     display: none;
   }
+  .main-screen {
+    margin-top: 80px;
+  }
   .mobile-message {
     color: var(--link-dark);
     display: block;
