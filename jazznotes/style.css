@@ -219,6 +219,12 @@ body {
   .page-title {
     display: none;
   }
+  .second-screen {
+    display: none;
+  }
+  .top-bar {
+    position: static;
+  }
   .mobile-message {
     color: var(--link-dark);
     display: block;
