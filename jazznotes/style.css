@@ -203,7 +203,7 @@ body {
   border: solid 2px var(--bg-dark);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
   .top-nav {
     display: none;
   }
@@ -225,8 +225,15 @@ body {
   .top-bar {
     position: static;
   }
+  .page-splitter {
+    display: none;
+  }
+  .main-header h2 {
+    display: none;
+  }
   .mobile-message {
     color: var(--link-dark);
     display: block;
+    margin-top: 80px;
   }
 }
