@@ -12,7 +12,7 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!-- style sheet -->
-    <link rel="stylesheet" href="./css/newstyle.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Devicon font -->
     <link rel="icon" type="image/png" href="favicon.png" />
 </head>
@@ -29,17 +29,48 @@
             <i class="fab fa-dev"></i>
         </a>
     </div>
-    <div class="title-container">
-        <div class="slide-in"><h1 class="unselectable centre-text switchable-text" unselectable="on"><span class="roboto switchable-text small-title">Hi I'm </span><span class="sacramento big-title">Seb</span></h1></div>
-        <h2 class="unselectable centre-text switchable-text"><span class="position web"><span class="invisible">.........</span>Web</span><span class="icon"> 🌐 </span><span class="position developer1">Developer</span></h2>
-        <h2 class="unselectable centre-text switchable-text"><span class="position net"><span class="invisible">.........</span>.NET</span><span class="icon"> 🖥️ </span><span class="position developer2">Developer</span></h2>
-        <h2 class="unselectable centre-text switchable-text"><span class="position database">Database</span><span class="icon"> 📇 </span><span class="position developer3">Developer</span></h2>
+    <div id="home-page">
+        <div class="title-container">
+            <div class="slide-in"><h1 class="unselectable centre-text switchable-text" unselectable="on"><span class="roboto switchable-text small-title">Hi I'm </span><span class="sacramento big-title">Seb</span></h1></div>
+            <h2 class="unselectable centre-text switchable-text"><span class="position web"><span class="invisible">.........</span>Web</span><span class="icon"> 🌐 </span><span class="position developer1">Developer</span></h2>
+            <h2 class="unselectable centre-text switchable-text"><span class="position net"><span class="invisible">.........</span>.NET</span><span class="icon"> 🖥️ </span><span class="position developer2">Developer</span></h2>
+            <h2 class="unselectable centre-text switchable-text"><span class="position database">Database</span><span class="icon"> 📇 </span><span class="position developer3">Developer</span></h2>
+        </div>
+        <div id="projects-button">
+            <h1 class="switchable-text">Projects</h1>
+            <h1 class="bouncing-button switchable-text">▼</h1>
+        </div>
     </div>
-    <div id="projects-button">
-        <h1 class="switchable-text">Projects</h1>
-        <h1 class="bouncing-button switchable-text">▼</h1>
+    <div id="projects-page">
+        <div class="project">
+            <h1 class="switchable-text">Stacket</h1>
+            <p class="switchable-text">Stacket is a to-do board application originally developed for personal usage, which aims to provide a platform for solo developers to manage their projects effectively. Stacket allows for unlimited boards and unlimited tasks stored locally. Built in .NET 5 with C# and WPF.</p>
+            <div class="switchable-text">
+                <a class="download-button" href="https://swegrock.github.io/stacket/"><i class="fas fa-download"></i></a>
+            </div>
+            <img src="./img/stacket.png" />
+        </div>
+        <div class="project">
+            <h1 class="switchable-text">JazzNotes</h1>
+            <p class="switchable-text">JazzNotes is a notes taking application designed for jazz musicians, it simplifies the note taking process by allowing PDFs and images to be annotated quickly and easily, and for all the notes to be filtered using a tag system. Built in .NET 5 with C# and Avalonia. Source code available.</p>
+            <div class="switchable-text">
+                <a class="download-button" href="https://swegrock.github.io/jazznotes/"><i class="fas fa-download"></i></a>
+                <a class="download-button" href="https://github.com/Swegrock/JazzNotes"><i class="fas fa-code"></i></a>
+            </div>
+            <img src="./img/jazznotes.png" />
+        </div>
+        <div class="project">
+            <h1 class="switchable-text">Booking Database</h1>
+            <p class="switchable-text">Database designed, populated and shown on a site. Built for Database module during my 2nd year of university, uses secure interaction with the database server using a username and password system. Built in HTML and PHP utilising Oracle DBMS and SQL. Source code available.</p>
+            <div class="switchable-text">
+                <a class="download-button" href="https://github.com/Swegrock/Coursework-Database"><i class="fas fa-code"></i></a>
+            </div>
+            <img src="./img/database.png" />
+        </div>
     </div>
-    <div id="page-transition"></div>
+    <div class="hide-the-page">
+        <div id="page-transition"></div>
+    </div>
     <script src="./js/darkmode.js"></script>
     <script src="./js/toprojects.js"></script>
 </body>

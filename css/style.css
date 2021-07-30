@@ -186,6 +186,53 @@ body.fade {
     z-index: 100;
 }
 
+#projects-page {
+    position: absolute;
+    margin-top: 5vh;
+    width: 80%;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    z-index: -1;
+    left: 11vw;
+    line-height: 30px;
+}
+
+.project {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    margin-bottom: -30vh;
+}
+
+.project h1 {
+    line-height: 5.5vh;
+}
+
+.project p {
+    line-height: 3vh;
+    width: 50%;
+}
+
+.project img {
+    position: relative;
+    bottom: 35vh;
+    float: right;
+    display: inline-block;
+    width: 40%;
+    border-radius: 2vh;
+}
+
+.hide-the-page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.download-button {
+    display: inline-block;
+}
+
 @keyframes growIn {
     0% {
         height: 0;
@@ -263,6 +310,14 @@ body.fade {
 @media only screen and (max-width: 800px) {
     .centre-text {
         margin: 3vh 0;
+    }
+
+    .project img {
+        display: none;
+    }
+
+    .project p {
+        width: 100%;
     }
 }
 
