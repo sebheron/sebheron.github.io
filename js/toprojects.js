@@ -12,7 +12,7 @@ function showFade() {
 function navigateToProjects() {
     page_transition.style.animation = 'growIn 500ms linear forwards';
     window.setTimeout(function () {
-        window.location.href = 'file:///C:/Users/Sebhe/Documents/GitHub/swegrock.github.io/portfolio.html#transition';
+        document.location.href = 'file:///C:/Users/Sebhe/Documents/GitHub/swegrock.github.io/portfolio.html#transition';
     }, 500);
 }
 
