@@ -6,69 +6,37 @@
     <title>Seb Heron - Portfolio</title>
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/newstyle.css">
     <!-- Devicon font -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="icon" type="image/png" href="favicon.png" />
 </head>
-  <body id="body">
-    
-      
-      <!-- One project per section-->
-      <section class="page-section hidden" data-bgcolor="#E27D60">
-
-        <div class="col intro-col">
-          <img class="profiler-img" src="https://www.gravatar.com/avatar/5b139d20bae2390032159e37999fe160?s=300" alt="Profile picture" width="50px">
-          <h1>Seb Heron</h1>
-          <h2>Developer</h2>
-          <a href="#stacket-project">
-            <img id="down-arrow" src="./img/arrow.png" alt="" width="50">
-          </a>
-        </div>
-
-      </section>
-
-      <section class="page-section hidden" id="stacket-project" data-bgcolor="#E8A87C" data-textcolor="ivory">
-        <div class="col">
-          <a href="https://rebrand.ly/stacket" target="_blank"><h3>Stacket</h3></a>
-          <p>A Kanban board style application for project management of solo projects.</p>
-        </div>
-        <div class="col">
-          <a href="https://rebrand.ly/stacket" target="_blank">
-            <img class="stacket-img" src="./img/stacket.png"  alt="An example of a stacket board">
-          </a>
-        </div>
-      </section>
-
-      <section class="page-section hidden" id="petit-project" data-bgcolor="#85DCBA" data-textcolor="ivory">
-        <div class="col">
-          <a href="https://rebrand.ly/petit" target="_blank"><h3>Petit</h3></a>
-          <p>A single file library for developing games quickly and in few lines for Processing 3.</p>
-        </div>
-        <div class="col">
-          <a href="https://rebrand.ly/petit" target="_blank">
-            <img class="project-img" src="./img/petit.png"  alt="Flappy Duck, a Flappy Bird clone written in 109 lines">
-          </a>
-        </div>
-      </section>
-
-      <section class="page-section hidden" data-bgcolor="#C38D9E">
-        <div class="col" style="justify-content: center;text-align: center">
-          <h3>Technologies</h3>
-          <div class="technologies">
-            <i class="devicon-visualstudio-plain-wordmark colored"></i>
-            <i class="devicon-csharp-plain colored"></i>
-            <i class="devicon-java-plain-wordmark colored"></i>
-            <i class="devicon-python-plain-wordmark colored"></i>
-          </div>
-        </div>
-      </section>
-
-      <section class="page-section hidden" data-bgcolor="#000000">
-      </section>
-
-    <script src="./js/pageScript.js"></script>
-    <script src="./js/slideshowScript.js"</script>
-  </body>
+<body class="fade">
+    <canvas class="background-canvas">
+    </canvas>
+    <div class="top-left big-icon">
+        <div id="darkmode-button" class="clickable account-button"><i id="darkmode-icon" class="far fa-moon switchable-text"></i></div>
+        <a class="account-button switchable-text" href="https://github.com/swegrock">
+            <i class="fab fa-github-square"></i>
+        </a>
+        <a class="account-button switchable-text" href="https://linkedin.com/sebheron21">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="account-button switchable-text" href="https://dev.to/swegrock">
+            <i class="fab fa-dev"></i>
+        </a>
+    </div>
+    <div class="title-container">
+        <div class="slide-in"><h1 class="unselectable centre-text switchable-text" unselectable="on"><span class="roboto switchable-text small-title">Hi I'm </span><span class="sacramento big-title">Seb</span></h1></div>
+        <h2 class="unselectable centre-text switchable-text"><span class="position web"><span class="invisible">..........</span>Web</span><span class="icon"> 🌐 </span><span class="position developer1">Developer</span></h2>
+        <h2 class="unselectable centre-text switchable-text"><span class="position net"><span class="invisible">.........</span>.NET</span><span class="icon"> 🖥️ </span><span class="position developer2">Developer</span></h2>
+        <h2 class="unselectable centre-text switchable-text"><span class="position database">Database</span><span class="icon"> 📇 </span><span class="position developer3">Developer</span></h2>
+    </div>
+    <script src="./js/darkmode.js"></script>
+</body>
 </html> 

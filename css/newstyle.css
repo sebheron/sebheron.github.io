@@ -1,0 +1,237 @@
+* {
+    --light-background: #F6F6F6;
+    --dark-background: #20252c;
+    --light-text: #433B4B;
+    --dark-text: #EEF1F5;
+    --name-text: #f20a72;
+    animation-fill-mode: forwards;
+    line-height: 2vw;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light-background);
+    opacity: 1;
+    transition: opacity linear 100ms;
+}
+
+body.fade {
+    opacity: 0;
+}
+
+.title-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.sacramento {
+    font-family: 'Sacramento', cursive;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.small-title {
+    font-size: 5vh;
+    color: var(--light-text);
+}
+
+.big-title {
+    font-size: 14vh;
+    color: var(--name-text);
+}
+
+.big-icon {
+    font-size: 6vh;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.clickable {
+    cursor: pointer;
+    z-index: 10;
+}
+
+.top-left {
+    position: fixed;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    width: 40px;
+}
+
+.centre-text {
+    width: 100%;
+    margin: 1.5vh 0; 
+    text-align: center;
+}
+
+.account-button {
+    margin-bottom: 1vh;
+}
+
+.background-canvas {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.position {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vh;
+}
+
+.icon {
+    font-size: 3vh;
+}
+
+.position.web {
+    animation: leftIn 1s ease-in;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.position.developer1 {
+    animation: rightIn 1s ease-in;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.position.net {
+    animation: leftIn 1s ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.position.developer2 {
+    animation: rightIn 1s ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.position.database {
+    animation: leftIn 1s ease-in;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.position.developer3 {
+    animation: rightIn 1s ease-in;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.slide-in {
+    position: relative;
+    animation: slideIn 400ms ease-in;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.invisible {
+    color: transparent;
+}
+
+@keyframes slideIn {
+    0% {
+        bottom: 30px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes leftIn {
+    0% {
+        right: 100px;
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes rightIn {
+    0% {
+        left: 100px;
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .centre-text {
+        margin: 3vh 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .centre-text {
+        width: 100%;
+        font-size: 45px;
+    }
+
+    .big-title {
+        font-size: 12vh;
+    }
+
+    .big-icon {
+        font-size: 5.5vh;
+    }
+
+    .position {
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vh;
+    }
+
+    .icon {
+        font-size: 3vh;
+    }
+}
