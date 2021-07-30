@@ -160,7 +160,7 @@ body.fade {
     transform: translateX(-50%);
     bottom: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.8vw;
+    font-size: 1.2vh;
     animation: bounceUp 200ms alternate-reverse infinite;
     cursor: pointer;
 }
@@ -168,7 +168,8 @@ body.fade {
 .bouncing-button {
     position: relative;
     width: 100%;
-    text-align: center
+    text-align: center;
+    font-size: 3vh;
 }
 
 .arrow {
