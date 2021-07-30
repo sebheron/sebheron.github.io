@@ -2,7 +2,7 @@ const project_button = document.getElementById('projects-button');
 const page_transition = document.getElementById('page-transition');
 
 function showFade() {
-    if (location.href.includes('portfolio') && location.hash == '#kms') {
+    if (location.href.includes('portfolio') && location.hash == '#transition') {
         window.setTimeout(function () {
             page_transition.style.animation = 'growOut 500ms linear forwards';
         }, 300);
@@ -12,7 +12,7 @@ function showFade() {
 function navigateToProjects() {
     page_transition.style.animation = 'growIn 500ms linear forwards';
     window.setTimeout(function () {
-        window.location.href = 'file:///C:/Users/Sebhe/Documents/GitHub/swegrock.github.io/portfolio.html#kms';
+        window.location.href = 'file:///C:/Users/Sebhe/Documents/GitHub/swegrock.github.io/portfolio.html#transition';
     }, 500);
 }
 
