@@ -76,8 +76,8 @@ body.fade {
 
 .top-left {
     position: fixed;
-    margin-top: 1vh;
-    margin-left: 1vh;
+    margin-top: 1.5vh;
+    margin-left: 1.5vh;
     width: 40px;
 }
 
@@ -88,13 +88,7 @@ body.fade {
 }
 
 .account-button {
-    margin-bottom: 1vh;
-}
-
-.background-canvas {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    margin-bottom: 2vh;
 }
 
 .position {
@@ -158,6 +152,67 @@ body.fade {
 
 .invisible {
     color: transparent;
+}
+
+#projects-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8vw;
+    animation: bounceUp 200ms alternate-reverse infinite;
+    cursor: pointer;
+}
+
+.bouncing-button {
+    position: relative;
+    width: 100%;
+    text-align: center
+}
+
+.arrow {
+    font-size: 5vw;
+}
+
+#page-transition {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #AB1111;
+    box-shadow: 0 -5px 20px grey;
+    z-index: 100;
+}
+
+@keyframes growIn {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes growOut {
+    0% {
+        height: 120%;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes bounceUp {
+    0% {
+        bottom: 0.5vw;
+    }
+
+    100% {
+        bottom: 0vw;
+    }
 }
 
 @keyframes slideIn {
