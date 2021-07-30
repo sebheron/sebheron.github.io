@@ -237,6 +237,18 @@ body.fade {
     display: inline-block;
 }
 
+.stacket-title {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jazznotes-title {
+    font-family: 'Style Script', cursive;
+}
+
+.bookings-title {
+    font-family: 'Oswald', sans-serif;
+}
+
 @keyframes growIn {
     0% {
         height: 0;
