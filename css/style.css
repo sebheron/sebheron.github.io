@@ -21,6 +21,8 @@ a:hover {
 html, body {
     margin: 0;
     padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 html {
@@ -35,6 +37,23 @@ body {
 
 body.fade {
     opacity: 0;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgray;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B3B3B3;
 }
 
 .title-container {
@@ -63,7 +82,7 @@ body.fade {
 }
 
 .big-icon {
-    font-size: 6vh;
+    font-size: 7vh;
 }
 
 .unselectable {
@@ -98,10 +117,6 @@ body.fade {
 .position {
     position: relative;
     font-family: 'Roboto', sans-serif;
-    font-size: 3vh;
-}
-
-.icon {
     font-size: 3vh;
 }
 
@@ -185,9 +200,9 @@ body.fade {
     top: 0;
     width: 100%;
     height: 0;
-    background-color: #AB1111;
-    box-shadow: 0 -5px 20px grey;
-    z-index: 100;
+    background-color: #222224;
+    box-shadow: 3px 3px 20px black;
+    z-index: 999;
 }
 
 #projects-page {
@@ -213,7 +228,7 @@ body.fade {
 
 .project img {
     border-radius: 2vh;
-    width: 90%;
+    width: 25vh;
 }
 
 .project-details {
@@ -249,6 +264,10 @@ body.fade {
     font-family: 'Oswald', sans-serif;
 }
 
+.icon {
+    font-size: 3vh;
+}
+
 @keyframes growIn {
     0% {
         height: 0;
@@ -261,10 +280,14 @@ body.fade {
 
 @keyframes growOut {
     0% {
+        top: unset;
+        bottom: 0;
         height: 120%;
     }
 
     100% {
+        top: unset;
+        bottom: 0;
         height: 0;
     }
 }
@@ -328,12 +351,11 @@ body.fade {
         margin: 3vh 0;
     }
 
-    .project img {
-        display: none;
-    }
 
-    .project p {
-        width: 100%;
+    .project-details {
+        margin-left: 20%;
+        display: block;
+        width: 70%;
     }
 }
 
@@ -349,7 +371,7 @@ body.fade {
     }
 
     .big-icon {
-        font-size: 5.5vh;
+        font-size: 8vh;
     }
 
     .position {
@@ -358,7 +380,13 @@ body.fade {
         font-size: 3vh;
     }
 
-    .icon {
-        font-size: 3vh;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .big-icon {
+        font-size: 5.2vh;
     }
 }
