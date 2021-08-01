@@ -270,24 +270,24 @@ body.fade {
 
 @keyframes growIn {
     0% {
+        top: unset;
+        bottom: 0;
         height: 0;
     }
 
     100% {
+        top: unset;
+        bottom: 0;
         height: 100%;
     }
 }
 
 @keyframes growOut {
     0% {
-        top: unset;
-        bottom: 0;
         height: 120%;
     }
 
     100% {
-        top: unset;
-        bottom: 0;
         height: 0;
     }
 }
