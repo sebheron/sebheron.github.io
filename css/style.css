@@ -371,7 +371,7 @@ body.fade {
     }
 
     .big-icon {
-        font-size: 8vh;
+        font-size: 8.5vw;
     }
 
     .position {
@@ -382,11 +382,5 @@ body.fade {
 
     ::-webkit-scrollbar {
         display: none;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .big-icon {
-        font-size: 5.2vh;
     }
 }
