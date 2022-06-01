@@ -124,6 +124,7 @@ body.fade {
     animation: leftIn 1s ease-in;
     animation-delay: 100ms;
     animation-fill-mode: forwards;
+    will-change: right;
     opacity: 0;
 }
 
@@ -131,6 +132,7 @@ body.fade {
     animation: rightIn 1s ease-in;
     animation-delay: 100ms;
     animation-fill-mode: forwards;
+    will-change: left;
     opacity: 0;
 }
 
@@ -138,6 +140,7 @@ body.fade {
     animation: leftIn 1s ease-in;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+    will-change: right;
     opacity: 0;
 }
 
@@ -145,6 +148,7 @@ body.fade {
     animation: rightIn 1s ease-in;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+    will-change: left;
     opacity: 0;
 }
 
@@ -152,6 +156,7 @@ body.fade {
     animation: leftIn 1s ease-in;
     animation-delay: 2s;
     animation-fill-mode: forwards;
+    will-change: right;
     opacity: 0;
 }
 
@@ -159,6 +164,7 @@ body.fade {
     animation: rightIn 1s ease-in;
     animation-delay: 2s;
     animation-fill-mode: forwards;
+    will-change: left;
     opacity: 0;
 }
 
@@ -166,6 +172,7 @@ body.fade {
     position: relative;
     animation: slideIn 400ms ease-in;
     animation-fill-mode: forwards;
+    will-change: bottom;
     opacity: 0;
 }
 
