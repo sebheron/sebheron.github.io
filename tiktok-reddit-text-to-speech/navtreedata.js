@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Tiktok Reddit Text To Speech", "index.html", [
+  [ "TikTok Reddit Text To Speech", "index.html", [
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ],
       [ "Package Members", "namespacemembers.html", [

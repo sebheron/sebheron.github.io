@@ -15,7 +15,9 @@ var annotated_dup =
           [ "IVideoFactory", "interface_reddit_text_to_speech_1_1_logic_1_1_factories_1_1_i_video_factory.html", "interface_reddit_text_to_speech_1_1_logic_1_1_factories_1_1_i_video_factory" ]
         ] ],
         [ "Services", "namespace_reddit_text_to_speech_1_1_logic_1_1_services.html", [
-          [ "AzureAuthenticationService", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_authentication_service.html", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_authentication_service" ],
+          [ "Azure", "namespace_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure.html", [
+            [ "AzureAuthenticationService", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_1_1_azure_authentication_service.html", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_1_1_azure_authentication_service" ]
+          ] ],
           [ "AzureSpeechSynthesisService", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_speech_synthesis_service.html", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_speech_synthesis_service" ],
           [ "FFMPEGService", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_f_f_m_p_e_g_service.html", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_f_f_m_p_e_g_service" ],
           [ "IImageService", "interface_reddit_text_to_speech_1_1_logic_1_1_services_1_1_i_image_service.html", "interface_reddit_text_to_speech_1_1_logic_1_1_services_1_1_i_image_service" ],
@@ -27,6 +29,9 @@ var annotated_dup =
           [ "WindowsSpeechSynthesisService", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_windows_speech_synthesis_service.html", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_windows_speech_synthesis_service" ]
         ] ],
         [ "RedditVideoGenerator", "class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html", "class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator" ]
+      ] ],
+      [ "Presentation", "namespace_reddit_text_to_speech_1_1_presentation.html", [
+        [ "Arguments", "class_reddit_text_to_speech_1_1_presentation_1_1_arguments.html", null ]
       ] ]
     ] ]
 ];

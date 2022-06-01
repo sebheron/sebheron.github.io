@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tiktok Reddit Text To Speech: RedditTextToSpeech.Logic.RedditVideoGenerator Class Reference</title>
+<title>TikTok Reddit Text To Speech: RedditTextToSpeech.Logic.RedditVideoGenerator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,10 +24,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tiktok Reddit Text To Speech
+   <div id="projectname">TikTok Reddit Text To Speech<span id="projectnumber">&#160;v0.2-beta.1</span>
    </div>
-   <div id="projectbrief">Reddit TTS generator designed for TikTok</div>
+   <div id="projectbrief">Application and library for generating TikTok videos from Reddit posts and comments.</div>
   </td>
  </tr>
  </tbody>
@@ -92,18 +93,20 @@ $(document).ready(function(){initNavTree('class_reddit_text_to_speech_1_1_logic_
 
 <p>The reddit video generator. Requires services to be specified. Some built-in ones exist, however custom implementations can be provided by implementing the interfaces.  
  <a href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html#details">More...</a></p>
+
+<p>Inherits RedditTextToSpeech.Logic.IRedditVideoGenerator.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a033f84e63378cce7bebf75fe89b331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html#a3a033f84e63378cce7bebf75fe89b331">RedditVideoGenerator</a> (<a class="el" href="interface_reddit_text_to_speech_1_1_logic_1_1_services_1_1_i_video_service.html">IVideoService</a> videoService, <a class="el" href="interface_reddit_text_to_speech_1_1_logic_1_1_services_1_1_i_image_service.html">IImageService</a> imageService, <a class="el" href="interface_reddit_text_to_speech_1_1_logic_1_1_services_1_1_i_speech_synthesis_service.html">ISpeechSynthesisService</a> speechSynthesisService, <a class="el" href="interface_reddit_text_to_speech_1_1_logic_1_1_services_1_1_i_reddit_service.html">IRedditService</a> redditService)</td></tr>
 <tr class="memdesc:a3a033f84e63378cce7bebf75fe89b331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html" title="The reddit video generator. Requires services to be specified. Some built-in ones exist,...">RedditVideoGenerator</a> class.  <a href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html#a3a033f84e63378cce7bebf75fe89b331">More...</a><br /></td></tr>
 <tr class="separator:a3a033f84e63378cce7bebf75fe89b331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5bc2d1c38c3dcce2ac085b56afef8b6"><td class="memItemLeft" align="right" valign="top">async Task&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html#ab5bc2d1c38c3dcce2ac085b56afef8b6">GenerateVideo</a> (string url, string backgroundVideo, <a class="el" href="namespace_reddit_text_to_speech_1_1_core.html#a94be8f8cbb5d24e8f760b62db2886a56">Gender</a> gender, TimeSpan startTime)</td></tr>
-<tr class="memdesc:ab5bc2d1c38c3dcce2ac085b56afef8b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a post video from a url.  <a href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html#ab5bc2d1c38c3dcce2ac085b56afef8b6">More...</a><br /></td></tr>
-<tr class="separator:ab5bc2d1c38c3dcce2ac085b56afef8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3cb7b59ca5ce7a39082cdfc61808ced"><td class="memItemLeft" align="right" valign="top">async Task&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html#ae3cb7b59ca5ce7a39082cdfc61808ced">GenerateVideo</a> (string url, string backgroundVideo, <a class="el" href="namespace_reddit_text_to_speech_1_1_core.html#a94be8f8cbb5d24e8f760b62db2886a56">Gender</a> gender, TimeSpan startTime, int commentsToHarvest)</td></tr>
-<tr class="memdesc:ae3cb7b59ca5ce7a39082cdfc61808ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a comment video from a url.  <a href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html#ae3cb7b59ca5ce7a39082cdfc61808ced">More...</a><br /></td></tr>
-<tr class="separator:ae3cb7b59ca5ce7a39082cdfc61808ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe561d9d71004acfcd1f8eb3197967e0"><td class="memItemLeft" align="right" valign="top">async Task&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html#afe561d9d71004acfcd1f8eb3197967e0">GenerateVideo</a> (string url, string backgroundVideo, string output, <a class="el" href="namespace_reddit_text_to_speech_1_1_core.html#a94be8f8cbb5d24e8f760b62db2886a56">Gender</a> gender, TimeSpan startTime)</td></tr>
+<tr class="memdesc:afe561d9d71004acfcd1f8eb3197967e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a post video from a url.  <a href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html#afe561d9d71004acfcd1f8eb3197967e0">More...</a><br /></td></tr>
+<tr class="separator:afe561d9d71004acfcd1f8eb3197967e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5552470bde470fdaf411faae84a43c23"><td class="memItemLeft" align="right" valign="top">async Task&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html#a5552470bde470fdaf411faae84a43c23">GenerateVideo</a> (string url, string backgroundVideo, string output, <a class="el" href="namespace_reddit_text_to_speech_1_1_core.html#a94be8f8cbb5d24e8f760b62db2886a56">Gender</a> gender, TimeSpan startTime, int commentsToHarvest, bool alternateVoice)</td></tr>
+<tr class="memdesc:a5552470bde470fdaf411faae84a43c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a comment video from a url.  <a href="class_reddit_text_to_speech_1_1_logic_1_1_reddit_video_generator.html#a5552470bde470fdaf411faae84a43c23">More...</a><br /></td></tr>
+<tr class="separator:a5552470bde470fdaf411faae84a43c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The reddit video generator. Requires services to be specified. Some built-in ones exist, however custom implementations can be provided by implementing the interfaces. </p>
@@ -160,8 +163,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab5bc2d1c38c3dcce2ac085b56afef8b6" name="ab5bc2d1c38c3dcce2ac085b56afef8b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5bc2d1c38c3dcce2ac085b56afef8b6">&#9670;&nbsp;</a></span>GenerateVideo() <span class="overload">[1/2]</span></h2>
+<a id="afe561d9d71004acfcd1f8eb3197967e0" name="afe561d9d71004acfcd1f8eb3197967e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe561d9d71004acfcd1f8eb3197967e0">&#9670;&nbsp;</a></span>GenerateVideo() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,6 +180,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>backgroundVideo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -203,6 +212,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">url</td><td>The url of the reddit post.</td></tr>
     <tr><td class="paramname">backgroundVideo</td><td>The background video.</td></tr>
+    <tr><td class="paramname">output</td><td>The output location.</td></tr>
     <tr><td class="paramname">gender</td><td>The gender of the TTS voice.</td></tr>
     <tr><td class="paramname">startTime</td><td>The starting time for the background video.</td></tr>
   </table>
@@ -212,8 +222,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3cb7b59ca5ce7a39082cdfc61808ced" name="ae3cb7b59ca5ce7a39082cdfc61808ced"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3cb7b59ca5ce7a39082cdfc61808ced">&#9670;&nbsp;</a></span>GenerateVideo() <span class="overload">[2/2]</span></h2>
+<a id="a5552470bde470fdaf411faae84a43c23" name="a5552470bde470fdaf411faae84a43c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5552470bde470fdaf411faae84a43c23">&#9670;&nbsp;</a></span>GenerateVideo() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,6 +243,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="namespace_reddit_text_to_speech_1_1_core.html#a94be8f8cbb5d24e8f760b62db2886a56">Gender</a>&#160;</td>
           <td class="paramname"><em>gender</em>, </td>
         </tr>
@@ -246,7 +262,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>commentsToHarvest</em>&#160;</td>
+          <td class="paramname"><em>commentsToHarvest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>alternateVoice</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -261,6 +283,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">url</td><td>The url of the reddit post.</td></tr>
     <tr><td class="paramname">backgroundVideo</td><td>The background video.</td></tr>
+    <tr><td class="paramname">output</td><td>The output location.</td></tr>
     <tr><td class="paramname">gender</td><td>The gender of the TTS voice.</td></tr>
     <tr><td class="paramname">startTime</td><td>The starting time for the background video.</td></tr>
     <tr><td class="paramname">commentsToHarvest</td><td>The number of comments to add to the video.</td></tr>
@@ -272,7 +295,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>RedditTextToSpeech.Logic/RedditVideoGenerator.cs</li>
+<li>C:/Users/Sebhe/Documents/GitHub/TikTok-Reddit-Text-To-Speech/RedditTextToSpeech.Logic/RedditVideoGenerator.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

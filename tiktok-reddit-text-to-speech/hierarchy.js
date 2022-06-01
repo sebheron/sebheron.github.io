@@ -1,7 +1,8 @@
 var hierarchy =
 [
+    [ "RedditTextToSpeech.Presentation.Arguments", "class_reddit_text_to_speech_1_1_presentation_1_1_arguments.html", null ],
     [ "RedditTextToSpeech.Core.AudioImagePair", "class_reddit_text_to_speech_1_1_core_1_1_audio_image_pair.html", null ],
-    [ "RedditTextToSpeech.Logic.Services.AzureAuthenticationService", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_authentication_service.html", null ],
+    [ "RedditTextToSpeech.Logic.Services.Azure.AzureAuthenticationService", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_1_1_azure_authentication_service.html", null ],
     [ "RedditTextToSpeech.Core.Comment", "class_reddit_text_to_speech_1_1_core_1_1_comment.html", null ],
     [ "RedditTextToSpeech.Logic.Factories.IAudioClipFactory", "interface_reddit_text_to_speech_1_1_logic_1_1_factories_1_1_i_audio_clip_factory.html", [
       [ "RedditTextToSpeech.Logic.Factories.AudioClipFactory", "class_reddit_text_to_speech_1_1_logic_1_1_factories_1_1_audio_clip_factory.html", null ]

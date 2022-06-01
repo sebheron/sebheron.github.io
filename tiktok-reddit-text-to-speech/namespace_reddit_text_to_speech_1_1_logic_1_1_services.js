@@ -1,6 +1,6 @@
 var namespace_reddit_text_to_speech_1_1_logic_1_1_services =
 [
-    [ "AzureAuthenticationService", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_authentication_service.html", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_authentication_service" ],
+    [ "Azure", "namespace_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure.html", "namespace_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure" ],
     [ "AzureSpeechSynthesisService", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_speech_synthesis_service.html", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_azure_speech_synthesis_service" ],
     [ "FFMPEGService", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_f_f_m_p_e_g_service.html", "class_reddit_text_to_speech_1_1_logic_1_1_services_1_1_f_f_m_p_e_g_service" ],
     [ "IImageService", "interface_reddit_text_to_speech_1_1_logic_1_1_services_1_1_i_image_service.html", "interface_reddit_text_to_speech_1_1_logic_1_1_services_1_1_i_image_service" ],
