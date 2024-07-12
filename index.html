@@ -2,25 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Seb Heron's portfolio of projects and work."
-    />
-    <meta name="author" content="Seb Heron" />
-    <meta property="og:title" content="Seb Heron" />
-    <meta
-      property="og:description"
-      content="Seb Heron's portfolio of projects and work."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sebheron.github.io/" />
-    <title>Seb Heron - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lemon&display=swap"
-      rel="stylesheet"
-    />
+    <title>🌶️</title>
   </head>
   <body>
     <div class="container">
@@ -44,28 +26,34 @@
           60 + (end.getSeconds() - now.getSeconds())
         ).slice(-2);
 
-        time.textContent = `${days}:${hours}:${minutes}:${seconds}`;
+        const howLong = `${days}:${hours}:${minutes}:${seconds}`;
+
+        document.title = time.textContent = howLong;
+        time.style.display = "block";
       }
 
       setInterval(updateTime, 1000);
     </script>
     <style>
+      html,
       body {
-        background-color: #000;
-        color: #fff;
-        font-family: "Inter", sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
         margin: 0;
+        height: 100%;
+        color: #fff;
+        background-color: #000;
       }
 
       .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
         text-align: center;
       }
 
       h1 {
+        display: none;
         font-size: 5rem;
         font-family: sans-serif;
       }
