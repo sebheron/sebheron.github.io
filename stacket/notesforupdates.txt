@@ -1,7 +1,0 @@
-When releasing an update it should be supplied in the form:
-
-[Version] [Link to zip]
-
-For example for version 2:
-
-0.2.0.0 https://swegrock.github.io/stacket/versions/Stacket-v0.2.zip
