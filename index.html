@@ -1,63 +1,322 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🌶️</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 id="time">00:00:00</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio | Seb Heron</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Hi I'm Seb</h1>
+    <ul>
+        <li><a href="linkedin.com/in/sebheron">LinkedIn</a></li>
+        <li><a href="github.com/sebheron">GitHub</a></li>
+    </ul>
+    <section>
+      <a href="https://github.com/sebheron/zup-dog">
+        <img src="/img/zd.jpg" alt="zup-dog cover">
+        <h2>zup-dog</h2>
+      </a>
+      <a href="https://github.com/sebheron/JazzNotes">
+        <img src="/img/jn.jpg" alt="JazzNotes cover">
+        <h2>JazzNotes</h2>
+      </a>
+      <a href="https://github.com/sebheron/Stacket">
+        <img src="img/st.jpg" alt="Stacket cover">
+        <h2>Stacket</h2>
+      </a>
+    </section>
+    <h3></h3>
+    <div id="styler-container">
+      <style id="styler"></style>
     </div>
-    <script>
-      //Arbitrary date to get this site done
-      const end = new Date(2024, 9, 1, 0, 0, 0, 0);
-
-      const time = document.getElementById("time");
-
-      function updateTime() {
-        const now = new Date();
-
-        const days = Math.floor((end - now) / 1000 / 60 / 60 / 24);
-        const hours = String(24 + (end.getHours() - now.getHours())).slice(-2);
-        const minutes = String(
-          60 + (end.getMinutes() - now.getMinutes())
-        ).slice(-2);
-        const seconds = String(
-          60 + (end.getSeconds() - now.getSeconds())
-        ).slice(-2);
-
-        const howLong = `${days}:${hours}:${minutes}:${seconds}`;
-
-        document.title = time.textContent = howLong;
-        time.style.display = "block";
-      }
-
-      setInterval(updateTime, 1000);
-      updateTime();
-    </script>
     <style>
-      html,
-      body {
-        margin: 0;
-        height: 100%;
-        color: #fff;
-        background-color: #000;
+      * {
+        transition: all 0.1s;
       }
 
-      .container {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        text-align: center;
+      #styler-container {
+        position: fixed;
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
+        height: 100px;
+        padding: 5px 8px;
+        background-color: black;
+        border: 6px solid #313131;
+        border-style:groove;
+        box-sizing: border-box;
+        overflow: hidden;
+        overflow-y: auto;
+        user-select: none;
+        border-radius: 10px;
       }
 
-      h1 {
-        display: none;
-        font-size: 5rem;
-        font-family: sans-serif;
+      #styler {
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 16px);
+        display: block;
+        white-space: pre;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        color: white;
+        min-height: calc(100% - 10px);
+        height: fit-content;
+        box-sizing: border-box;
+      }
+
+      #styler::after {
+        content: "_";
+        display: inline;
+        animation: blink 1s infinite;
+      }
+
+      h3 {
+        font-family: 'Anonymous Pro', monospace;
+        width: fit-content;
+        margin: 0 auto;
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
     </style>
-  </body>
+    <noscript>
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+        }
+
+        h1 {
+          margin: 2rem auto 0.5rem;
+          width: max-content;
+          font-family: 'Anonymous Pro', monospace;
+        }
+
+        img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          border-radius: 0.5rem;
+        }
+
+        a {
+          font-family: 'Montserrat', sans-serif;
+          text-decoration: none;
+        }
+
+        ul {
+          list-style-type: none;
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          padding: 0;
+        }
+
+        li > a {
+          background-color: black;
+          color: white;
+          padding: 0.5rem 1rem;
+          border-radius: 1.5rem;
+          width: 300px;
+        }
+
+        li:nth-child(1) > a {
+          background-color: #0077B5;
+        }
+
+        li:nth-child(2) > a {
+          background-color: #152850;
+        }
+
+        section {
+          display: flex;
+          gap: 1rem;
+          margin: 2rem auto 3rem;
+          width: max-content;
+        }
+
+        @media (max-width: 600px) {
+          section {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+
+        section > a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+          text-decoration: none;
+          background-color: black;
+          color: white;
+          padding: 1rem;
+          border-radius: 1rem;
+        }
+
+        section > a:nth-child(1) {
+          background-color: #2e8859;
+        }
+
+        section > a:nth-child(2) {
+          background-color: #5c3a61;
+        }
+
+        section > a:nth-child(3) {
+          background-color: #a99b3d;
+        }
+
+        h1::after {
+          display: inline-block;
+          content: "👋";
+          margin-left: 0.5rem;
+          margin-right: -1rem;
+          animation: wave 1s infinite;
+        }
+
+        @keyframes wave {
+          0% {
+            transform: rotate(0deg);
+          }
+          50% {
+            transform: rotate(15deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
+        }
+
+        h3::after {
+          content: "Thanks for waiting!";
+        }
+      </style>
+    </noscript>
+    <script>
+      const style = `html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 2rem auto 0.5rem;
+  width: max-content;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+li > a {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  width: 300px;
+}
+
+li:nth-child(1) > a {
+  background-color: #0077B5;
+}
+
+li:nth-child(2) > a {
+  background-color: #152850;
+}
+
+section {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem auto 3rem;
+  width: max-content;
+}
+
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+section > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+section > a:nth-child(1) {
+  background-color: #2e8859;
+}
+
+section > a:nth-child(2) {
+  background-color: #5c3a61;
+}
+
+section > a:nth-child(3) {
+  background-color: #a99b3d;
+}
+
+h1::after {
+  display: inline-block;
+  content: "👋";
+  margin-left: 0.5rem;
+  margin-right: -1rem;
+  animation: wave 1s infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+h3::after {
+  content: "Thanks for waiting!";
+}`.trim();
+      const styler = document.getElementById('styler');
+      style.split('').forEach((char, i) => {
+        setTimeout(() => {
+          styler.innerHTML += char;
+        }, i * 20);
+      });
+    </script>
+</body>
 </html>
