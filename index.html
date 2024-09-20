@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio | Seb Heron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=DM+Serif+Text:ital@0;1&family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="/">Home</a>
+      <a href="https://www.linkedin.com/in/sebheron21/">LinkedIn</a>
+      <a href="https://github.com/sebheron/">GitHub</a>
+      <a href="mailto:sebheron21@hotmail.co.uk">Email</a>
+    </header>
+      <section id="content">
+        <div class="container">
+        <h1>
+          Hello, I'm Seb. A software engineer with over 3 years of experience
+          working in the tech industry.
+        </h1>
+        <h2>
+          I've experience working on particle sizing tech
+          <a class="magic first" href="https://www.malvernpanalytical.com"><span class="fancy">@</span> Malvern Panalytical</a>,
+          building tactical data software
+          <a class="magic second" href="https://www.metrea.aero/"><span class="fancy">@</span> Metrea Mission Data</a> and
+          making beautiful websites and apps
+          <a class="magic third" href="https://quantasystems.co.uk/"><span class="fancy">@</span> Quanta Systems</a>.
+        </h2>
+        <h2>
+          I also love open-source. I've recently worked on
+          <a class="magic first" href="https://github.com/sebheron/zup-dog">zup-dog</a>, a 3D design tool for the web.
+          And in past I've built
+          <a class="magic second" href="https://github.com/sebheron/JazzNotes">JazzNotes</a>, a cross-platform musical transcription tool.
+          And
+          <a class="magic third" href="https://github.com/sebheron/Stacket">Stacket</a>, a kanban board for windows.
+        </h2>
+        <h2>Wack me an email <a class="magic subtle" href="mailto:sebheron998@gmail.com">sebheron998@gmail.com</a></h2>
+      </div>
+      </section>
+      <div class="adventure">
+        <div id="game">
+          <h3>Fancy a quick adventure?</h3>
+          <button id="start">Let's Go</button>
+        </div>
+        <div id="loader">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Anek Devanagari", sans-serif;
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 1em;
+        padding: 0;
+        font-size: 3.5em;
+        line-height: 1.3em;
+        font-weight: 500;
+      }
+
+      h1:last-child, h2:last-child {
+        margin-bottom: 0;
+      }
+
+      #content {
+        display: grid;
+        grid-template-rows: 1fr;
+        color: white;
+        background: black;
+        transition: grid-template-rows 1s;
+      }
+
+      #content.hidden {
+        grid-template-rows: 0fr;
+      }
+
+      .container {
+        padding: 2rem 2rem 2rem 1rem;
+        overflow: hidden;
+        transition: padding 1s;
+      }
+
+      #content.hidden > .container {
+        padding: 0 2rem;
+      }
+
+      .fancy {
+        font-family: "DM Serif Text", serif;
+        font-style: italic;
+      }
+
+      .magic {
+        opacity: 1;
+        transition: opacity 0.3s, color 0.3s;
+        line-height: 1.2em;
+        font-family: "Edu VIC WA NT Beginner", sans-serif;
+      }
+
+      .magic:hover {
+        opacity: 0.7;
+      }
+
+      .first {
+        color: #e89898;
+      }
+
+      .second {
+        color: #8cdf8c;
+      }
+
+      .third {
+        color: #b7b7ec;
+      }
+
+      .subtle {
+        color: #9e6e82;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5em 2em 0.25em;
+        background: black;
+        color: white;
+        z-index: 100;
+      }
+
+      header > a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      header > a:hover {
+        color: #9e6e82;
+      }
+
+      @media (max-width: 650px) {
+        h1,
+        h2 {
+          font-size: 2em;
+        }
+      }
+
+      /* Game styles */
+      .adventure {
+        margin: 1em;
+        padding: 1em;
+      }
+
+      h3 {
+        width: max-content;
+        font-size: 2em;
+        margin: 1em auto 0;
+      }
+
+      button {
+        font-size: 1.5em;
+        padding: 0.5em 1em;
+        margin: 1em auto;
+        display: block;
+        background: black;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s, opacity 0.3s;
+        scroll-margin-bottom: 2em;
+      }
+
+      button.hidden {
+        transform: translateX(2em);
+        opacity: 0;
+      }
+
+      button:disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+
+      #game {
+        text-align: center;
+        transition: opacity 0.3s;
+      }
+
+      #game.hidden {
+        opacity: 0;
+      }
+
+      #loader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: max-content;
+        height: 2em;
+        gap: 0.5em;
+        position: relative;
+        margin: 0 auto;
+        opacity: 0;
+        transition: opacity 0.3s;
+        user-select: none;
+      }
+
+      #loader.show {
+        opacity: 1;
+      }
+
+      #loader span {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        background: rgb(0, 0, 0);
+        border-radius: 50%;
+        animation: bounce 0.6s infinite alternate;
+      }
+
+      #loader span:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+
+      #loader span:nth-child(2) {
+        animation-delay: 0.3s;
+      }
+
+      #loader span:nth-child(3) {
+        animation-delay: 0.5s;
+      }
+
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-1em);
+        }
+      }
+    </style>
+    <script type="module" src="js/game.js"></script>
+  </body>
+</html>
